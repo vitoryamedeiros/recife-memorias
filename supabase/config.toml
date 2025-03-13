@@ -1,0 +1,22 @@
+
+[functions.increment_story_views]
+enabled = true
+verify_jwt = true
+import_map = "./functions/increment_story_views/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/increment_story_views/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/increment_story_views/*.html" ]
+
+[functions.increment_story_votes]
+enabled = true
+verify_jwt = true
+import_map = "./functions/increment_story_votes/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/increment_story_votes/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/increment_story_votes/*.html" ]
